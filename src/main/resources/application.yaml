@@ -1,0 +1,13 @@
+server:
+  port: 9098
+
+spring:
+  application:
+    name: FOOD-CATALOGUE-SERVICE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
