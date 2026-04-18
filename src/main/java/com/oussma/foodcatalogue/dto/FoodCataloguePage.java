@@ -5,7 +5,6 @@ import com.oussma.foodcatalogue.entity.FoodItem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.util.List;
 

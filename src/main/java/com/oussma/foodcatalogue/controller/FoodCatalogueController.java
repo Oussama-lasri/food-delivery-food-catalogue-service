@@ -3,7 +3,9 @@ package com.oussma.foodcatalogue.controller;
 import com.oussma.foodcatalogue.dto.FoodCataloguePage;
 import com.oussma.foodcatalogue.dto.FoodItemDTO;
 import com.oussma.foodcatalogue.service.FoodCatalogueService;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,9 +13,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/foodCatalogue")
 @CrossOrigin
+@RequiredArgsConstructor
 public class FoodCatalogueController {
 
-    @Autowired
+
     FoodCatalogueService foodCatalogueService;
 
     @PostMapping("/addFoodItem")

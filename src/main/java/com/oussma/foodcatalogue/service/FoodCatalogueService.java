@@ -6,23 +6,24 @@ import com.oussma.foodcatalogue.dto.Restaurant;
 import com.oussma.foodcatalogue.entity.FoodItem;
 import com.oussma.foodcatalogue.mapper.FoodItemMapper;
 import com.oussma.foodcatalogue.repository.FoodItemRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import lombok.RequiredArgsConstructor;
+
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class FoodCatalogueService {
 
-    @Autowired
-    FoodItemRepository foodItemRepo;
+  
+    private final FoodItemRepository foodItemRepo;
 
-    @Autowired
-    RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
     
-    @Autowired
-    FoodItemMapper foodItemMapper;
+    private final FoodItemMapper foodItemMapper;
 
 
     public FoodItemDTO addFoodItem(FoodItemDTO foodItemDTO) {
