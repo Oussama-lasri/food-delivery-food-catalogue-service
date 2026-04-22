@@ -5,7 +5,7 @@ spring:
   application:
     name: FOOD-CATALOGUE-SERVICE
   profiles:
-    active: local
+    active: dev
   jpa:
     hibernate:
       ddl-auto: update
