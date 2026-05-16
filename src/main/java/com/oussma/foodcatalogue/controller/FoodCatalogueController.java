@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 public class FoodCatalogueController {
 
 
-    FoodCatalogueService foodCatalogueService;
+    private final FoodCatalogueService foodCatalogueService;
 
     @PostMapping("/addFoodItem")
     public ResponseEntity<FoodItemDTO> addFoodItem(@RequestBody FoodItemDTO foodItemDTO){
