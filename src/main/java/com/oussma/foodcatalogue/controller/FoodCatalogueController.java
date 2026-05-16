@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class FoodCatalogueController {
 
+	
 
     private final FoodCatalogueService foodCatalogueService;
 
